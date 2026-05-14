@@ -25,7 +25,7 @@ from anthropic import AsyncAnthropic
 dotenv_path = find_dotenv()
 print("Using .env file:", dotenv_path)
 
-load_dotenv(dotenv_path, override=True)
+load_dotenv(dotenv_path, override=False)
 
 TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 ANTHROPIC_KEY = os.getenv("ANTHROPIC_API_KEY")
