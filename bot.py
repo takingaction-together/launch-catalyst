@@ -194,6 +194,7 @@ Your aim is to be clear, perceptive, commercially sharp, and genuinely helpful w
 # ----------------------------
 # Anthropic client
 # ----------------------------
+print("DIAG anthropic key prefix:", (ANTHROPIC_KEY or "")[:25], "suffix:", (ANTHROPIC_KEY or "")[-12:], "len:", len(ANTHROPIC_KEY or ""))
 client = AsyncAnthropic(api_key=ANTHROPIC_KEY)
 
 # ----------------------------
